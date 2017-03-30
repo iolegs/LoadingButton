@@ -13,6 +13,7 @@
 		FBA4DFD71E8DB1F40096BF3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBA4DFD51E8DB1F40096BF3A /* Main.storyboard */; };
 		FBA4DFD91E8DB1F40096BF3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA4DFD81E8DB1F40096BF3A /* Assets.xcassets */; };
 		FBA4DFDC1E8DB1F40096BF3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBA4DFDA1E8DB1F40096BF3A /* LaunchScreen.storyboard */; };
+		FBA4DFF11E8DB7C30096BF3A /* LoadingButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA4DFF01E8DB7C30096BF3A /* LoadingButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		FBA4DFD81E8DB1F40096BF3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBA4DFDB1E8DB1F40096BF3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBA4DFDD1E8DB1F40096BF3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBA4DFEF1E8DB7C30096BF3A /* LoadingButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingButton.h; sourceTree = "<group>"; };
+		FBA4DFF01E8DB7C30096BF3A /* LoadingButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,7 @@
 		FBA4DFC01E8DB1F40096BF3A = {
 			isa = PBXGroup;
 			children = (
+				FBA4DFEE1E8DB7C30096BF3A /* LoadingButton */,
 				FBA4DFCB1E8DB1F40096BF3A /* LoadingButtonExample */,
 				FBA4DFCA1E8DB1F40096BF3A /* Products */,
 			);
@@ -77,6 +81,16 @@
 				FBA4DFCD1E8DB1F40096BF3A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBA4DFEE1E8DB7C30096BF3A /* LoadingButton */ = {
+			isa = PBXGroup;
+			children = (
+				FBA4DFEF1E8DB7C30096BF3A /* LoadingButton.h */,
+				FBA4DFF01E8DB7C30096BF3A /* LoadingButton.m */,
+			);
+			name = LoadingButton;
+			path = ../../LoadingButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBA4DFF11E8DB7C30096BF3A /* LoadingButton.m in Sources */,
 				FBA4DFD41E8DB1F40096BF3A /* ViewController.m in Sources */,
 				FBA4DFD11E8DB1F40096BF3A /* AppDelegate.m in Sources */,
 				FBA4DFCE1E8DB1F40096BF3A /* main.m in Sources */,
@@ -273,6 +288,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LoadingButtonExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = os.LoadingButtonExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -284,6 +300,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LoadingButtonExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = os.LoadingButtonExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
